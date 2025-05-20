@@ -19,6 +19,8 @@
 
 
 
+variable "ak" { }
+variable "sk" { }
 provider "volcengine" {
   access_key = var.ak
   secret_key = var.sk
