@@ -1,18 +1,11 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
-variable "region" {
-  description = "AWS region"
-  default     = "us-west-1"
+variable "volc_region" {
+  description = "volc region"
+  type = string
+  default = "cn-guangzhou"
 }
 
-variable "instance_type" {
-  description = "Type of EC2 instance to provision"
-  default     = "t2.micro"
+variable "vpc_cidr_block" {
+  description = "value"
+  type = string
+  default = "10.16.0.0/16"
 }
-
-variable "instance_name" {
-  description = "EC2 instance name"
-  default     = "Provisioned by Terraform"
-}
-
